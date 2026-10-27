@@ -4,20 +4,58 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ArtAurA</title>
 <style>
-body{margin:0;background:#050508;color:white;font-family:sans-serif;text-align:center}
-.hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;background:#050508;padding:20px}
-.hero img{width:90%;max-width:500px;filter:drop-shadow(0 0 25px gold)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#050508;color:white;font-family:sans-serif}
+.navbar{display:flex;justify-content:space-between;align-items:center;padding:15px 20px;background:#0a0a0f;border-bottom:1px solid #1a1a2e;position:sticky;top:0;z-index:100}
+.logo-nav{height:35px}
+.hamburger{font-size:28px;background:none;border:none;color:#d4af37;cursor:pointer}
+.menu{position:fixed;top:0;right:-100%;width:70%;height:100vh;background:#0f0f14;border-left:1px solid #1f1f2e;padding:80px 30px 30px;transition:0.3s;z-index:99}
+.menu.active{right:0}
+.menu a{display:block;color:white;text-decoration:none;padding:15px 0;border-bottom:1px solid #1f1f2e;font-size:18px}
+.menu a:hover{color:#d4af37}
+.overlay{position:fixed;top:0;left:0;width:100%;height:100vh;background:rgba(0,0,0,0.7);display:none;z-index:98}
+.overlay.active{display:block}
+.hero{height:85vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px}
+.hero img{width:90%;max-width:450px;filter:drop-shadow(0 0 25px gold)}
 .btn{padding:14px 28px;border-radius:12px;text-decoration:none;font-weight:bold;display:inline-block;margin:8px}
 .btn-gold{background:linear-gradient(90deg,#d4af37,#b8860b);color:black}
 </style>
 </head>
 <body>
+
+<div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+<nav class="navbar">
+  <img src="logo.webp" alt="ArtAurA" class="logo-nav">
+  <button class="hamburger" onclick="toggleMenu()">☰</button>
+</nav>
+
+<div class="menu" id="menu">
+  <a href="index2.html" onclick="toggleMenu()">🏠 Início</a>
+  <a href="#servicos" onclick="toggleMenu()">💼 Serviços</a>
+  <a href="projetos.html" onclick="toggleMenu()">📁 Projetos</a>
+  <a href="calculadora.html" onclick="toggleMenu()">🧮 Calculadora</a>
+  <a href="contato.html" onclick="toggleMenu()">📱 Contato</a>
+  <a href="https://instagram.com/paulovlog369" onclick="toggleMenu()">📸 Instagram</a>
+</div>
+
 <div class="hero">
-<img src="logo.webp" alt="ArtAurA Logo">
-<p style="color:#aaa;margin:20px 0">Tecnologia que gera confiança</p>
-<div>
-<a class="btn btn-gold" href="#contato">Solicitar Orçamento</a>
+  <img src="logo.webp" alt="ArtAurA Logo">
+  <p style="color:#aaa;margin:20px 0">Tecnologia que gera confiança</p>
+  <a class="btn btn-gold" href="#contato">Solicitar Orçamento</a>
 </div>
+
+<div id="servicos" style="padding:50px 20px;text-align:center">
+  <h2>Serviços</h2>
+  <p style="color:#aaa;margin-top:15px">Sites • Automação • Sistemas</p>
 </div>
+
+<script>
+function toggleMenu(){
+  document.getElementById('menu').classList.toggle('active');
+  document.getElementById('overlay').classList.toggle('active');
+}
+</script>
+
 </body>
 </html>
