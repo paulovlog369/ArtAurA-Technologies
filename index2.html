@@ -1,22 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ArtAurA</title>
+<title>ArtAurA Technologies - Monetizando Microclimas</title>
 <style>
-body{margin:0;background:#050508;color:white;font-family:sans-serif}
+body{margin:0;background:#050508;color:white;font-family:system-ui,sans-serif;overflow-x:hidden}
 .topo{background:#0a0a0f;border-bottom:1px solid #222;display:flex;justify-content:space-between;align-items:center;padding:12px 18px;position:sticky;top:0;z-index:100}
 .topo img{height:32px}
 #check{display:none}
-.hamburger{font-size:30px;color:#d4af37;cursor:pointer;user-select:none}
-#abas{position:fixed;top:0;right:-100%;width:75%;height:100vh;background:#111;padding:70px 25px;transition:0.3s;z-index:99}
+.hamburger{font-size:30px;color:#d4af37;cursor:pointer}
+#abas{position:fixed;top:0;right:-100%;width:75%;height:100vh;background:#0f0f14;padding:70px 25px;transition:0.3s;z-index:101}
 #check:checked ~ #abas{right:0}
-#check:checked ~ #fundo{display:block}
 #abas a{display:block;color:white;text-decoration:none;padding:16px 0;border-bottom:1px solid #222;font-size:18px}
-#fundo{position:fixed;top:0;left:0;width:100%;height:100vh;background:rgba(0,0,0,0.6);display:none;z-index:98}
-.hero{height:80vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px}
-.hero img{width:85%;max-width:400px}
-.btn{padding:14px 28px;border-radius:12px;text-decoration:none;font-weight:bold;background:linear-gradient(90deg,#d4af37,#b8860b);color:black;display:inline-block;margin-top:10px}
+#fundo{position:fixed;top:0;left:0;width:100%;height:100vh;background:rgba(0,0,0,0.7);display:none;z-index:100}
+#check:checked ~ #fundo{display:block}
+.hero{min-height:85vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:30px 20px;background:radial-gradient(circle at 50% 0%, #1a1a2e, #050508)}
+.hero img{width:80%;max-width:380px;filter:drop-shadow(0 0 20px rgba(212,175,55,0.3))}
+.tag{margin-top:18px;background:#111;border:1px solid #d4af37;color:#d4af37;padding:6px 14px;border-radius:20px;font-size:12px;letter-spacing:1px}
+h1{font-size:32px;line-height:1.1;margin:18px 0 10px 0}
+h1 span{color:#d4af37}
+.sub{color:#aaa;font-size:16px;line-height:1.5;max-width:400px}
+.btn{padding:16px 30px;border-radius:12px;text-decoration:none;font-weight:bold;background:linear-gradient(90deg,#d4af37,#b8860b);color:black;display:inline-block;margin-top:24px;box-shadow:0 4px 20px rgba(212,175,55,0.3)}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:20px;margin-top:10px}
+.card{background:#101018;border:1px solid #222;border-radius:16px;padding:18px;text-align:center}
+.card b{font-size:26px;color:#d4af37;display:block}
+.card small{color:#777;font-size:12px}
+.secao{padding:40px 20px;border-top:1px solid #111}
+.secao h2{font-size:24px;margin-bottom:12px}
+.secao p{color:#aaa;line-height:1.6}
+.passo{background:#0e0e14;border:1px solid #1e1e2e;border-radius:14px;padding:16px;margin:12px 0;display:flex;gap:12px;align-items:center}
+.passo span{font-size:28px}
+.ip{border:1px solid #d4af37;background:linear-gradient(135deg,#15120a,#0a0a0f);border-radius:16px;padding:20px}
+footer{padding:30px 20px;color:#555;font-size:12px;text-align:center;border-top:1px solid #111}
 </style>
 </head>
 <body>
@@ -25,24 +41,61 @@ body{margin:0;background:#050508;color:white;font-family:sans-serif}
 <div id="fundo"><label for="check" style="display:block;width:100%;height:100vh"></label></div>
 
 <div class="topo">
-<img src="logo.webp">
+<img src="logo.webp" alt="ArtAurA">
 <label for="check" class="hamburger">☰</label>
 </div>
 
 <div id="abas">
 <label for="check" style="color:#d4af37;display:block;text-align:right;font-size:28px;margin-bottom:20px;cursor:pointer">✕</label>
 <a href="index2.html">🏠 Início</a>
-<a href="#servicos">💼 Serviços</a>
+<a href="#tecnologia">⚙️ Tecnologia</a>
+<a href="#patente">🛡️ Patente</a>
 <a href="projetos.html">📁 Projetos</a>
-<a href="calculadora.html">🧮 Calculadora</a>
-<a href="contato.html">📱 Contato</a>
+<a href="contato.html">📱 Seja Pioneiro</a>
 </div>
 
 <div class="hero">
-<img src="logo.webp">
-<p style="color:#aaa;margin:20px 0">Tecnologia que gera confiança</p>
-<a class="btn" href="#">Solicitar Orçamento</a>
+<div class="tag">PATENTE COM PRIORIDADE INPI • PCT-READY</div>
+<img src="logo.webp" alt="ArtAurA">
+<h1>Resfriamos praças em <span>-10°C</span>. O calor ativa seu anúncio.</h1>
+<p class="sub">Totem solar autônomo com névoa de 70 bar + painel termocrômico. O clima é o botão de play da sua mídia.</p>
+<a class="btn" href="contato.html">Quero ser Pioneiro →</a>
+<div class="stats">
+<div class="card"><b>70 bar</b><small>PRESSÃO MICRONÉVOA</small></div>
+<div class="card"><b>5-15µ</b><small>NÃO MOLHA</small></div>
+<div class="card"><b>-10°C</b><small>MICROCLIMA</small></div>
+<div class="card"><b>>35°C</b><small>GATILHO DO ANÚNCIO</small></div>
 </div>
+</div>
+
+<div class="secao" id="tecnologia">
+<h2>⚙️ Tecnologia e Engenharia</h2>
+<p>Pronto para escala. 4 subsistemas em 1 chassi de alumínio.</p>
+<div class="passo"><span>💧</span><div><b>Arrefecimento</b><br><small style="color:#aaa">Bomba + bicos evaporativos. Reduz 5 a 10°C</small></div></div>
+<div class="passo"><span>🎨</span><div><b>Comunicação</b><br><small style="color:#aaa">Pigmento termocrômico. Muda de cor com o calor</small></div></div>
+<div class="passo"><span>☀️</span><div><b>Energia</b><br><small style="color:#aaa">Solar no topo. Autonomia total off-grid</small></div></div>
+<div class="passo"><span>🛡️</span><div><b>Chassi</b><br><small style="color:#aaa">Alumínio anodizado. Proteção urbana anti-vandalismo</small></div></div>
+</div>
+
+<div class="secao" id="patente">
+<div class="ip">
+<h2 style="margin:0 0 10px 0">🛡️ Fosso Competitivo</h2>
+<p style="margin:0">Depósito de prioridade nacional no INPI Brasil + janela de 12 meses do tratado PCT para estender para EUA, Europa e Ásia.<br><br>
+<b style="color:#d4af37">Reivindicação:</b> Totem com micro-névoa evaporativa e superfície revestida com pigmento termocrômico em ciclo de feedback térmico. Quem copiar a sinergia exata infringe.</p>
+</div>
+</div>
+
+<div class="secao">
+<h2>💰 Retorno Financeiro e ESG</h2>
+<p>A publicidade financia a mitigação climática. Transformamos custo público em receita privada com métricas ESG auditáveis.</p>
+<p style="color:white">✓ OOHs • ✓ Shoppings • ✓ Smart Cities • ✓ Investidores ESG</p>
+<a class="btn" href="calculadora.html" style="background:#111;color:white;border:1px solid #333">🧮 Ver Calculadora de ROI</a>
+</div>
+
+<footer>
+ArtAurA Technologies © 2026 - Tecnologia que gera confiança<br>
+Santa Bárbara d'Oeste - SP - Brasil
+</footer>
 
 </body>
 </html>
