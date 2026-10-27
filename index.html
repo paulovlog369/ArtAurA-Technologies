@@ -4,12 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ArtAurA Technologies - Monetizando Microclimas</title>
+<meta name="description" content="Totem solar com névoa de 70 bar e painel termocrômico para resfriar praças.">
+<meta property="og:title" content="ArtAurA Technologies">
+<meta property="og:description" content="Resfriamos praças. O calor ativa seu anúncio.">
+<meta property="og:type" content="website">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
 body{background:#050508;color:#fff;font-family:system-ui,sans-serif;overflow-x:hidden}
 .topo{background:#0a0a0f;border-bottom:1px solid #222;display:flex;justify-content:space-between;align-items:center;padding:12px 18px;position:sticky;top:0;z-index:103}
 .topo img{height:32px;mix-blend-mode:screen}
 #check{position:absolute;opacity:0;width:0;height:0}
+#check:focus-visible ~ .topo .hamburger{outline:2px solid #d4af37;outline-offset:4px}
 .hamburger{font-size:30px;color:#d4af37;cursor:pointer}
 #abas{position:fixed;top:0;right:-100%;width:75%;max-width:320px;height:100vh;background:#0f0f14;padding:70px 25px;transition:.3s;z-index:102}
 #check:checked ~ #abas{right:0}
@@ -18,55 +24,59 @@ body{background:#050508;color:#fff;font-family:system-ui,sans-serif;overflow-x:h
 #check:checked ~ #fundo{display:block}
 .hero{min-height:85vh;min-height:85svh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:30px 20px;background:radial-gradient(circle at 50% 0%, #1a1a2e, #050508)}
 .hero img{width:80%;max-width:360px;filter:drop-shadow(0 0 20px rgba(212,175,55,.3));mix-blend-mode:screen}
-h1{font-size:30px;line-height:1.15;margin:0 0 10px}h1 span{color:#d4af37}
+h1{font-size:30px;line-height:1.15;margin:0 0 10px}
+h1 span{color:#d4af37}
 .sub{color:#bbb;font-size:15px;max-width:380px}
 .btn{padding:16px 28px;border-radius:12px;text-decoration:none;font-weight:bold;background:linear-gradient(90deg,#d4af37,#b8860b);color:#000;display:inline-block;margin-top:22px}
-.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:18px 18px 10px;max-width:400px;width:100%;margin-top:16px}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:18px 18px 10px;max-width:400px;width:100%;margin-top:16px;scroll-margin-top:70px}
 .card{background:#101018;border:1px solid #222;border-radius:14px;padding:14px;text-align:center}
 .card b{font-size:22px;color:#d4af37;display:block}
 .card small{color:#999;font-size:11px}
 .video-box{padding:10px 18px 18px}
 .video-frame{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:14px;border:1px solid #d4af37;background:#000}
 .video-frame iframe{position:absolute;top:0;left:0;width:100%;height:100%}
-footer{padding:28px 18px;color:#888;font-size:12px;text-align:center;border-top:1px solid #111}
+.video-box p{color:#999;font-size:12px;margin-top:8px;text-align:center}
+footer{padding:28px 18px;color:#888;font-size:12px;text-align:center;border-top:1px solid #111;line-height:1.6}
 footer a{color:#d4af37;text-decoration:none}
+footer small{color:#888}
+a:focus-visible,.btn:focus-visible{outline:2px solid #d4af37;outline-offset:3px}
 </style>
 </head>
-<body>
-<input type="checkbox" id="check">
+<body id="inicio">
+<input type="checkbox" id="check" aria-label="Abrir menu">
 <label id="fundo" for="check"></label>
 <div class="topo">
-<img src="logo.webp" alt="ArtAurA">
-<label for="check" class="hamburger">☰</label>
+<img src="logo.webp" alt="ArtAurA Technologies">
+<label for="check" class="hamburger" aria-hidden="true">☰</label>
 </div>
 <div id="abas">
 <label for="check" style="color:#d4af37;display:block;text-align:right;font-size:28px;margin-bottom:18px;cursor:pointer">✕</label>
-<a href="index.html">🏠 Início</a>
-<a href="#tecnologia">⚙️ Tecnologia</a>
-<a href="https://wa.me/5519999472187?text=Ola%20ArtAurA%20quero%20ser%20pioneiro" target="_blank">📱 WhatsApp</a>
+<a href="#inicio" onclick="document.getElementById('check').checked=false">🏠 Início</a>
+<a href="#tecnologia" onclick="document.getElementById('check').checked=false">⚙️ Tecnologia</a>
+<a href="https://wa.me/5519999472187?text=Ola%20ArtAurA%20quero%20ser%20pioneiro" target="_blank" rel="noopener" onclick="document.getElementById('check').checked=false">📱 WhatsApp</a>
 </div>
 <div class="hero">
-<img src="logo.webp" alt="ArtAurA" style="margin-top:20px">
+<img src="logo.webp" alt="ArtAurA Technologies" style="margin-top:20px">
 <h1>Resfriamos praças em até <span>-10°C</span>*<br>O calor ativa seu anúncio.</h1>
 <p class="sub">Totem solar autônomo com névoa de 70 bar + painel termocrômico.</p>
-<a class="btn" href="https://wa.me/5519999472187?text=Ola%20quero%20ser%20pioneiro%20ArtAurA" target="_blank">Quero ser Pioneiro no WhatsApp →</a>
-<div class="stats">
+<a class="btn" href="https://wa.me/5519999472187?text=Ola%20quero%20ser%20pioneiro%20ArtAurA" target="_blank" rel="noopener">Quero ser Pioneiro no WhatsApp →</a>
+<div class="stats" id="tecnologia">
 <div class="card"><b>70 bar</b><small>PRESSÃO</small></div>
 <div class="card"><b>5-15µm</b><small>NÃO MOLHA</small></div>
 <div class="card"><b>-10°C</b><small>MICROCLIMA*</small></div>
-<div class="card"><b>>35°C</b><small>GATILHO</small></div>
+<div class="card"><b>&gt;35°C</b><small>GATILHO</small></div>
 </div>
 </div>
 <div class="video-box">
 <div class="video-frame">
-<iframe src="https://www.youtube.com/embed/hSelL2bmUk8" frameborder="0" allowfullscreen></iframe>
+<iframe title="Pitch ArtAurA de 7 minutos" src="https://www.youtube.com/embed/hSelL2bmUk8" frameborder="0" allowfullscreen></iframe>
 </div>
-<p style="color:#666;font-size:10px;margin-top:8px;text-align:center">▶ PITCH COMPLETO • 7 MIN</p>
+<p>▶ PITCH COMPLETO • 7 MIN</p>
 </div>
 <footer>
 ArtAurA Technologies © 2026<br>
-<a href="https://wa.me/5519999472187">WhatsApp: (19) 99947-2187</a> - Santa Bárbara d'Oeste - SP<br>
-<small style="color:#666">*Sensação térmica em testes de campo</small>
+<a href="https://wa.me/5519999472187" target="_blank" rel="noopener">WhatsApp: (19) 99947-2187</a> - Santa Bárbara d'Oeste - SP<br>
+<small>*Sensação térmica em testes de campo</small>
 </footer>
 </body>
 </html>
