@@ -2,61 +2,40 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cidades Azuis | ArtAurA Technologies</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cidades Azuis - ArtAurA</title>
 <style>
-:root{--bg:#0b0e0c;--surface:#121714;--text:#f4f5f2;--muted:#b6c0b8;--gold:#d6b45c;--border:rgba(226,232,225,.13);--content:1120px}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.65}
-.container{width:min(var(--content),calc(100% - 40px));margin-inline:auto}
-.eyebrow{color:var(--gold);font-size:.76rem;font-weight:750;letter-spacing:.16em;text-transform:uppercase;display:block;margin-bottom:8px}
-.header{position:sticky;top:0;background:rgba(11,14,12,.9);border-bottom:1px solid var(--border);backdrop-filter:blur(12px);padding:14px 0;z-index:50}
-.header-inner{display:flex;justify-content:space-between;align-items:center}
-.nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}.nav a:hover{color:var(--gold)}
-.hero{padding:72px 0 24px}.hero h1{font-size:clamp(2.4rem,5vw,4.2rem);line-height:1.02;margin:0 0 16px;max-width:800px}.hero h1 span{color:var(--gold)}.hero p{color:var(--muted);max-width:720px;font-size:1.08rem}
-.card{border:1px solid var(--border);border-radius:22px;overflow:hidden;background:var(--surface);margin-bottom:28px}
-.card img{width:100%;display:block;background:#f5f1e8}
-.card-body{padding:24px}.card-body h3{margin:0 0 8px;font-size:1.35rem}.card-body p{color:var(--muted);margin:0}
-.button{display:inline-flex;padding:12px 18px;border-radius:11px;background:var(--gold);color:#17140b;font-weight:750;text-decoration:none}
-.cta{margin:40px 0 80px;padding:36px;border:1px solid rgba(214,180,92,.35);border-radius:22px;background:linear-gradient(120deg, rgba(214,180,92,.12), rgba(18,23,20,.92));text-align:center}
+body{margin:0;background:#05070a;color:#e8f0ff;font-family:system-ui}
+.top{position:sticky;top:0;background:rgba(5,7,10,.95);padding:12px 16px;display:flex;justify-content:space-between;border-bottom:1px solid #1a2332;z-index:10}
+.top a{color:#00e5ff;text-decoration:none;font-weight:700}
+.wrap{max-width:1000px;margin:0 auto;padding:18px}
+h1{font-size:26px}
+.grid{display:grid;grid-template-columns:1fr;gap:20px}
+@media(min-width:800px){.grid{grid-template-columns:1fr 1fr}}
+.card{background:#0f1217;border:1px solid #1f2a3a;border-radius:22px;overflow:hidden}
+.card img{width:100%;display:block;height:auto}
+.cap{padding:12px;background:#10151e;color:#c7d6ea;font-size:13px}
+.aviso{background:#10151e;border:1px dashed #26405e;padding:16px;border-radius:14px;color:#8aa0bb;margin-bottom:20px}
 </style>
 </head>
 <body>
-<header class="header"><div class="container header-inner">
-<a href="index.html" style="color:var(--text);text-decoration:none;font-weight:800">ArtAurA <small style="color:var(--muted)">Technologies</small></a>
-<nav class="nav"><a href="index.html">Início</a><a href="totem.html">Totem</a><a href="cidades-azuis.html" style="color:var(--gold)">Cidades Azuis</a><a href="https://wa.me/5519999472187" style="background:var(--gold);color:#17140b;padding:8px 12px;border-radius:10px">WhatsApp</a></nav>
-</div></header>
-
-<main>
-<section class="hero"><div class="container">
-<p class="eyebrow">Santa Bárbara d'Oeste • Frente Água</p>
-<h1>Cidades Azuis: quando a <span>água volta a viver</span> na cidade.</h1>
-<p>Totem resfria o AR (-10°C | 70 BAR | 100% SOLAR). Cidades Azuis regenera a ÁGUA com filtragem botânica (banana + macrófitas), colheita automatizada e praça viva.</p>
-<p style="margin-top:20px"><a class="button" href="https://youtu.be/hSelL2bmUk8" target="_blank">YouTube ↗</a> <a class="button" style="background:transparent;border:1px solid var(--border);color:var(--text);margin-left:8px" href="https://www.instagram.com/artauratechnologies" target="_blank">Instagram ↗</a></p>
-</div></section>
-
-<section><div class="container">
-<div class="card"><img src="cidades-01-capa.jpg"><div class="card-body"><p class="eyebrow">01</p><h3>Cidades Azuis: A Revolução dos Canais Ecológicos</h3><p>Engenharia, Fitorremediação e Vida Urbana Regenerada.</p></div></div>
-<div class="card"><img src="cidades-02-colapso.jpg"><div class="card-body"><p class="eyebrow">02 • Problema SBO</p><h3>O Colapso das Águas Urbanas</h3><p>Poluição, Zonas de Calor, Espaços Mortos.</p></div></div>
-<div class="card"><img src="cidades-03-anatomia.jpg"><div class="card-body"><p class="eyebrow">03 • Solução</p><h3>Anatomia do Bypass Ecológico</h3><p>Entrada → Canal Paralelo → Saída Cristalina.</p></div></div>
-<div class="card"><img src="cidades-04-paradigma.jpg"><div class="card-body"><p class="eyebrow">04 • Paradigma</p><h3>Novo Paradigma da Despoluição</h3><p>Tradicional (interrompe rio, químico) vs Canal Paralelo (desvio lateral, biologia natural, ecossistema vivo).</p></div></div>
-<div class="card"><img src="cidades-05-ecorrural.jpg"><div class="card-body"><p class="eyebrow">05 • Fluxo</p><h3>Tecnologia Ecorrural</h3><p>Rio poluído → Canal paralelo → Biofiltragem com frutíferas → Revitalização → Pesca automatizada.</p></div></div>
-<div class="card"><img src="cidades-06-ecossistema.jpg"><div class="card-body"><p class="eyebrow">06 • Visão Completa</p><h3>Ecossistema Regenerativo Completo</h3><p>Máquina viva de fazer cidade.</p></div></div>
-<div class="card"><img src="cidades-07-trajeto.jpg"><div class="card-body"><p class="eyebrow">07</p><h3>Trajeto da Purificação</h3><p>Filtros Primários → Substratos Biológicos → Filtro de Plantas.</p></div></div>
-<div class="card"><img src="cidades-08-bananeira.jpg"><div class="card-body"><p class="eyebrow">08</p><h3>Função da Bananeira</h3><p>Controle térmico + Filtração ativa.</p></div></div>
-<div class="card"><img src="cidades-09-colheita.jpg"><div class="card-body"><p class="eyebrow">09</p><h3>Colheita Automatizada</h3><p>Habitat → Acúmulo → Elevação mecânica.</p></div></div>
-<div class="card"><img src="cidades-10-motor.jpg"><div class="card-body"><p class="eyebrow">10</p><h3>Motor Econômico Sustentável</h3><p>O canal se financia com pesca + hortas.</p></div></div>
-<div class="card"><img src="cidades-11-paisagismo.jpg"><div class="card-body"><p class="eyebrow">11</p><h3>Paisagismo Produtivo</h3><p>Sombra + Alimento + Segurança alimentar.</p></div></div>
-<div class="card"><img src="cidades-12-escalabilidade.jpg"><div class="card-body"><p class="eyebrow">12</p><h3>Para Grandes Rios</h3><p>De SBO ao Tietê.</p></div></div>
-<div class="card"><img src="cidades-13-praca.jpg"><div class="card-body"><p class="eyebrow">13</p><h3>Renascimento do Espaço Público</h3><p>Praça viva com água limpa e peixes.</p></div></div>
-<div class="card"><img src="cidades-14-apoie.jpg"><div class="card-body"><p class="eyebrow">14 • Movimento</p><h3>Apoie a Visão do Futuro</h3><p>@artauratechnologies • youtu.be/hSelL2bmUk8</p><a class="button" href="https://wa.me/5519999472187?text=Quero%20piloto%20Cidades%20Azuis" target="_blank" style="margin-top:12px">QUERO PILOTO EM SBO →</a></div></div>
-
-<div class="cta">
-<p class="eyebrow">Ar + Água = Cidade Viva</p>
-<h2>Piloto em Santa Bárbara d'Oeste?</h2>
-<a class="button" href="https://wa.me/5519999472187?text=Ola%20ArtAurA%20piloto%20AR%2BAGUA%20SBO" target="_blank">WHATSAPP 19 99947-2187 →</a>
-<p style="margin-top:16px"><a href="https://www.instagram.com/artauratechnologies" style="color:var(--gold);text-decoration:none">instagram.com/artauratechnologies</a> • <a href="https://youtu.be/hSelL2bmUk8" style="color:var(--gold);text-decoration:none">youtube.com</a></p>
+<div class="top"><a href="index.html">← Voltar</a><a href="https://instagram.com/artauratechnologies">@artauratechnologies</a></div>
+<div class="wrap">
+<h1>Projeto Cidades Azuis</h1>
+<div class="aviso">Como usar: No GitHub, clique em Add file > Upload files e envie suas imagens com os nomes cidades-01.jpg até cidades-11.jpg. Elas aparecerão aqui automaticamente.</div>
+<div class="grid">
+<div class="card"><img src="cidades-01.jpg" loading="lazy"><div class="cap">1. Habitat - Módulo base</div></div>
+<div class="card"><img src="cidades-02.jpg" loading="lazy"><div class="cap">2. Acúmulo - Crescimento vertical</div></div>
+<div class="card"><img src="cidades-03.jpg" loading="lazy"><div class="cap">3. Elevação - Estrutura</div></div>
+<div class="card"><img src="cidades-04.jpg" loading="lazy"><div class="cap">4. Escalabilidade</div></div>
+<div class="card"><img src="cidades-05.jpg" loading="lazy"><div class="cap">5. Motor Econômico</div></div>
+<div class="card"><img src="cidades-06.jpg" loading="lazy"><div class="cap">6. Ecossistema Regenerativo</div></div>
+<div class="card"><img src="cidades-07.jpg" loading="lazy"><div class="cap">7. Prancha 7</div></div>
+<div class="card"><img src="cidades-08.jpg" loading="lazy"><div class="cap">8. Prancha 8</div></div>
+<div class="card"><img src="cidades-09.jpg" loading="lazy"><div class="cap">9. Prancha 9</div></div>
+<div class="card"><img src="cidades-10.jpg" loading="lazy"><div class="cap">10. Prancha 10</div></div>
+<div class="card"><img src="cidades-11.jpg" loading="lazy"><div class="cap">11. Apoie a Visão do Futuro</div></div>
 </div>
-</div></section>
-</main>
+</div>
 </body>
 </html>
